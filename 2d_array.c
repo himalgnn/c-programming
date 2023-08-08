@@ -1,19 +1,23 @@
-#include<stdio.h>
-int main(){
-    int a[2][3],i,j;
-    printf("Enter the array elements\n");
-    for(i=0;i<2;i++){
-        for(j=0;j<3;j++){
-            scanf("%d",&a[i][j]);
-        }
-    }
-    printf("Displaying array elements: \n");
+#include <stdio.h>
+int main() {
+  int a[2][3], i, j;
 
-    for(i=0;i<2;i++){
-        for(j=0;j<3;j++){
-            printf("%d, ",a[i][j]);
-        }
-        printf("\n");
+  // Enter the element of an array
+
+  printf("Enter the array elements\n");
+  for (i = 0; i < 2; i++) {
+    for (j = 0; j < 3; j++) {
+      scanf("%d", &a[i][j]);
     }
-    return 0;
+  }
+  printf("Displaying array elements: \n");
+
+  // Displaying the element
+  for (i = 0; i < 2; i++) {
+    for (j = 0; j < 3; j++) {
+      printf("%d, ", a[i][j]);
+    }
+    printf("\n");
+  }
+  return 0;
 }
